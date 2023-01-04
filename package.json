@@ -1,0 +1,14 @@
+{
+  "name": "xmlapp",
+  "version": "1.0.0",
+  "description": "Conversion Tool for Drumeo",
+  "main": "index.js",
+  "scripts": {
+    "test": "xmlapp"
+  },
+  "author": "Sepehr Mehdipour",
+  "license": "ISC",
+  "dependencies": {
+    "fast-xml-parser": "^4.0.12"
+  }
+}
