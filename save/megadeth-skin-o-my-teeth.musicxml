@@ -231,7 +231,16 @@ Transcription: Alfredo Smith</credit-words>
           <sign>none</sign>
         </clef>
       </attributes>
-      <sound tempo="98" />
+      
+        <direction placement="above">
+            <direction-type>
+                <metronome default-y="20" font-family="Times" font-size="12" halign="left" relative-x="-32">
+                    <beat-unit>quarter</beat-unit>
+                    <per-minute>98</per-minute>
+                </metronome>
+            </direction-type>
+        </direction>
+<sound tempo="98" />
       <direction placement="above">
         <direction-type>
           <words default-y="64" font-family="Times" font-size="12" font-weight="bold" relative-x="-56" xml:space="preserve">Intro

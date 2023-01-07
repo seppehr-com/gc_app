@@ -14,7 +14,17 @@ class RegexClass{
     tempoFix(callback){
         const reg=/<sound.*(tempo=).*\/>/g
         const replace=`<sound tempo="${this.tempo}" />`
-        this.xml=this.xml.replace(reg,replace)
+        const metronome = `
+        <direction placement="above">
+            <direction-type>
+                <metronome default-y="20" font-family="Times" font-size="12" halign="left" relative-x="-32">
+                    <beat-unit>quarter</beat-unit>
+                    <per-minute>${this.tempo}</per-minute>
+                </metronome>
+            </direction-type>
+        </direction>`
+        
+        this.xml=this.xml.replace(reg,metronome+'\n'+replace)
 
         callback(this.xml.match(reg))
     }
